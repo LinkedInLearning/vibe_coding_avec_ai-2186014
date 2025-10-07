@@ -10,9 +10,11 @@ Les fonctionnalités seront de pouvoir :
 - réinitialiser et reprendre.
 ---
 ## ⚠️ Consignes avant de démarrer :
-
 - Installer l'extension de navigateur (Chrome, Firefox ou Safari) [Markdown Viewer](https://chromewebstore.google.com/detail/markdown-viewer/ckkdlimhmcjmikdlpkmbgfkaikojcbjk?hl=en)
-- Ouvrir le *Code Playground* [jsfiddle.net](https://jsfiddle.net/)
+- Ouvrir le *Code Playground* [ici](https://platform.openai.com/chat)
+- Pour tester le code en ligne: 
+ * *JSfiddle* [jsfiddle.net](https://jsfiddle.net/) pour tester le code en ligne
+ * *CodePen* [https://codepen.io](https://codepen.io/) pour tester le code en ligne
 
 --- 
 
