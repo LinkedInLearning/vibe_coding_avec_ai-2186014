@@ -29,6 +29,16 @@ Créer une application **Checklist** pour ajouter, cocher/décocher et supprimer
 
 ---
 
+## ⚙️ Outils pour démarrer :
+- Installer l'extension de navigateur (Chrome, Firefox ou Safari) [Markdown Viewer](https://chromewebstore.google.com/detail/markdown-viewer/ckkdlimhmcjmikdlpkmbgfkaikojcbjk?hl=en)
+- Ouvrir le *Code Playground* [ici](https://platform.openai.com/chat)
+- Pour tester le code en ligne: 
+ * *JSfiddle* [jsfiddle.net](https://jsfiddle.net/) pour tester le code en ligne
+ * *CodePen* [https://codepen.io](https://codepen.io/) pour tester le code en ligne
+ * *Playcode.io* [https://playcode.io/react](https://playcode.io/react)
+
+---
+
 ## 🛠️ Phase 1 : Configuration
 - Créer une app React (Vite ou CRA)  
 - Ouvrir composant `App` avec le titre "Checklist"   

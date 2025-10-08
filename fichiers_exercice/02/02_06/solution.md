@@ -13,7 +13,7 @@ timer-js/
 ├── style.css
 └── script.js
 ```
-
+[lien](https://jsfiddle.net/2fxgdp3o/)vers solution sur jsfiddle
 ## 🧩 index.html
 
 ```html
