@@ -9,11 +9,13 @@ Les fonctionnalités seront de pouvoir :
 - mettre en pause, 
 - réinitialiser et reprendre.
 ---
-## ⚠️ Consignes avant de démarrer :
 
+## ⚠️ Consignes avant de démarrer :
 - Installer l'extension de navigateur (Chrome, Firefox ou Safari) [Markdown Viewer](https://chromewebstore.google.com/detail/markdown-viewer/ckkdlimhmcjmikdlpkmbgfkaikojcbjk?hl=en)
-- Ouvrir le *Code Playground* [ici](https://platform.openai.com/chat/edit?models=gpt-4)
-- Ouvrir le *JSfiddle* [jsfiddle.net](https://jsfiddle.net/) pour tester le code en ligne
+- Ouvrir le *Code Playground* [ici](https://platform.openai.com/chat)
+- Pour tester le code en ligne: 
+ * *JSfiddle* [jsfiddle.net](https://jsfiddle.net/) pour tester le code en ligne
+ * *CodePen* [https://codepen.io](https://codepen.io/) pour tester le code en ligne
 
 --- 
 
@@ -74,8 +76,7 @@ Une application **Timer** en JavaScript pur :
 
 ---
 
-## 🌟 Bonus: 
-### Prompts & Consignes
+## 🌟 Bonus
 - 💬 Prompt : *ajouter de l'audio ou une alerte avec `alert()` ou `Audio()` quand le timer arrive à zéro.*  
 - 💬 Prompt: *utiliser `localStorage` pour sauvegarder les dernières valeurs saisies*  
 💬 Prompt : *ajouter une animation CSS (changement de couleur ou vibration) à la fin du décompte.*  
