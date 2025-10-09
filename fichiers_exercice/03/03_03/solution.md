@@ -26,59 +26,69 @@ App.jsx:
 
 
 ```jsx
-import { useState, useEffect } from "react";
-import "./App.css";
+import React, { useState, useEffect } from 'react';
 
-export default function App() {
-  const [time, setTime] = useState(new Date());
-  const [is24h, setIs24h] = useState(true);
 
+function Clock() {
+  // State pour stocker date et heure actuelles
+  const [dateTime, setDateTime] = useState(getCurrentDateTime());
+
+  // Fonction pour récupérer la date et l'heure actuelles formatées
+  function getCurrentDateTime() {
+    const now = new Date();
+
+    // Heure formatée HH:MM:SS
+    const hours = String(now.getHours()).padStart(2, "0");
+    const minutes = String(now.getMinutes()).padStart(2, "0");
+    const seconds = String(now.getSeconds()).padStart(2, "0");
+
+    // Liste des jours et mois en français
+    const daysOfWeek = ["Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi"];
+    const months = [
+      "Janvier", "Février", "Mars", "Avril", "Mai", "Juin",
+      "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"
+    ];
+
+    const dayName = daysOfWeek[now.getDay()]; // nom du jour
+    const day = now.getDate();               // jour du mois
+    const monthName = months[now.getMonth()]; // nom du mois
+    const year = now.getFullYear();          // année
+
+    return {
+      time: `${hours}:${minutes}:${seconds}`,
+      date: `${dayName} ${day} ${monthName} ${year}`,
+    };
+  }
+
+  // useEffect pour mettre à jour date et heure chaque seconde
   useEffect(() => {
     const interval = setInterval(() => {
-      setTime(new Date());
+      setDateTime(getCurrentDateTime());
     }, 1000);
+
+    // Nettoyage de l'intervalle à la destruction du composant
     return () => clearInterval(interval);
   }, []);
 
-  const formatTime = () => {
-    let hours = time.getHours();
-    let minutes = time.getMinutes();
-    let seconds = time.getSeconds();
-
-    if (!is24h) {
-      const ampm = hours >= 12 ? "PM" : "AM";
-      hours = hours % 12 || 12;
-      return `${pad(hours)}:${pad(minutes)}:${pad(seconds)} ${ampm}`;
-    }
-    return `${pad(hours)}:${pad(minutes)}:${pad(seconds)}`;
-  };
-
-  const pad = (n) => String(n).padStart(2, "0");
-
-  const formatDate = () => {
-    const options = { weekday: "long", year: "numeric", month: "long", day: "numeric" };
-    return time.toLocaleDateString("fr-FR", options);
-  };
-
   return (
-    <div className="container">
-      <h1>🕒 Horloge</h1>
-      <div className="clock">{formatTime()}</div>
-      <div className="date">{formatDate()}</div>
-      <button onClick={() => setIs24h(!is24h)}>
-        Basculer en format {is24h ? "12h" : "24h"}
-      </button>
-    </div>
-  );
-}
-
-export default function App() {
-  return (
-    <div>
+    <div style={{ textAlign: "center", marginTop: "50px" }}>
       <h1>Horloge</h1>
+      <p style={{ fontSize: "2rem", fontFamily: "monospace" }}>{dateTime.time}</p>
+      <p style={{ fontSize: "1.5rem" }}>{dateTime.date}</p>
     </div>
   );
 }
+
+export default App;
+
+
+export function App(props) {
+  return <Clock />;
+}
+
+// Log to console
+console.log('Hello console');
+
 ```
 
 2. **🎨 Phase 3 : Style & design (App.css)**
