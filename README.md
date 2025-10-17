@@ -1,12 +1,12 @@
-# Nom final de la formation
+# Découvrir le Vibe Coding : Coder avec l'aide de l'IA
 
-Ce dossier Repository est lié au cours `Nom final de la formation`. Le cours entier est disponible sur [LinkedIn Learning][lil-course-url].
+Ce dossier Repository est lié au cours `Découvrir le Vibe Coding : Coder avec l'aide de l'IA`. Le cours entier est disponible sur [LinkedIn Learning][lil-course-url].
 
 ![Nom final de la formation][lil-thumbnail-url] 
 
 Ce cours est intégré à GitHub Codespaces, un environnement de développement instantané « dans le nuage » qui offre toutes les fonctionnalités de votre IDE préféré sans nécessiter de configuration sur une machine locale. Avec Codespaces, vous pouvez vous exercer à partir de n'importe quelle machine, à tout moment, tout en utilisant un outil que vous êtes susceptible de rencontrer sur votre lieu de travail. Consultez la vidéo "Utiliser Codespaces sur GitHub" pour savoir comment démarrer.    
 
-DESCRIPTION DE LA FORMATION
+Découvrez le Vibe Coding avec Sandy Ludosky et apprenez à transformer vos idées en véritables projets numériques grâce à l’IA. Cette formation pratique vous guide pour passer du langage naturel au code, créer des applications interactives, des jeux vidéo, des outils pédagogiques ou des portfolios, tout en développant votre créativité et vos compétences techniques. À travers des exemples concrets et des cas pratiques, vous explorerez comment l’IA devient un partenaire de codage, comment itérer, tester et améliorer vos projets, et comment publier vos créations en ligne.
 
 ## Instructions
 
@@ -62,8 +62,8 @@ Pour utiliser ces fichiers d’exercice, vous avez besoin de :
 Retrouvez mes autres formations sur [LinkedIn Learning][lil-URL-trainer].
 
 [0]: # (Replace these placeholder URLs with actual course URLs)
-[lil-course-url]: https://www.linkedin.com
+[lil-course-url]: https://www.linkedin.com/learning
 [lil-thumbnail-url]: https://media.licdn.com/dms/image/v2/D4E0DAQG0eDHsyOSqTA/learning-public-crop_675_1200/B4EZVdqqdwHUAY-/0/1741033220778?e=2147483647&v=beta&t=FxUDo6FA8W8CiFROwqfZKL_mzQhYx9loYLfjN-LNjgA
-[lil-URL-trainer]: https://
+[lil-URL-trainer]: https://www.linkedin.com/learning/instructors/sandy-ludosky
 
 [1]: # (End of FR-Instruction ###############################################################################################)
